@@ -1,0 +1,22 @@
+#piano {
+  display: flex;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
+.white-key {
+  width: 80px;
+  height: 300px;
+  border: 2px solid gray;
+  border-radius: 3px;
+}
+
+.black-key {
+  width: 60px;
+  height: 200px;
+  background-color: black;
+  border: 2px solid black;
+  position: relative;
+  margin-left: -35px;
+  margin-right: -35px;
+}

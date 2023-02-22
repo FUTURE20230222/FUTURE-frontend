@@ -1,0 +1,38 @@
+.react-colorful.color-A {
+  width: 400px;
+}
+
+.robot-face-img {
+  width: 100%;
+}
+
+.option {
+  margin: 50px 40px 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.robot-botton {
+  margin-bottom: 20px;
+}
+
+Button {
+  margin-left: 10px;
+}
+
+.face-image {
+  margin-top: 90px;
+  position: relative;
+  height: auto;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#save-setting {
+  bottom: 100px;
+  position: sticky;
+  left: 150%;
+}

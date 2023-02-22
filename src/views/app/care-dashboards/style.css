@@ -1,0 +1,54 @@
+.rb-svg-icon {
+  transition: 250ms;
+  width: auto;
+  height: 45px;
+  margin: 0.6rem;
+}
+
+.rb-svg-icon:hover {
+  fill: rgb(122, 122, 122);
+}
+.ptzFocusContainer {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background-color: rgb(255 255 255 / 51%);
+  border-radius: 25px;
+  display: flex;
+  flex-flow: column;
+}
+
+.lightContainer {
+  position: absolute;
+  top: 0px;
+  left: 30%;
+  background-color: rgb(255 255 255 / 51%);
+  border-radius: 25px;
+  display: flex;
+  flex-flow: row;
+}
+
+/* map.js */
+.btn_map {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border-style: none;
+  border-color: black;
+  border-width: 3px;
+  padding: 10px 20px;
+  margin: 5px;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.hand-btn {
+  margin-top: 10px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+

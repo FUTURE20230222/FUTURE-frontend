@@ -1,0 +1,54 @@
+[
+  {
+    "command": "fetch('http://localhost:8080/relay_ctrl/set_SW?id=3&status=1&timer=-1').catch(err => console.log(err))",
+    "conditions": [
+      "/打開噴煙/",
+      "/打開緊煙/",
+      "/開啟賓醫/",
+      "/開啟噴煙/",
+      "/開啟婚宴/",
+      "/開始噴霧/",
+      "/打開噴霧/",
+      "/開始噴煙/",
+      "/Turn on automation/",
+      "/turn on automation/",
+      "/Turn on atomizer/",
+      "/turn on atomizer/",
+      "/turn on the Miser/",
+      "/turn on the organizer/",
+      "/Turn on the go to my son/"
+    ]
+  },
+  {
+    "command": "fetch('http://localhost:8080/relay_ctrl/set_SW?id=3&status=0&timer=0').catch(err => console.log(err))",
+    "conditions": [
+      "/停止噴煙/",
+      "/停止更衣/",
+      "/停止婚宴/",
+      "/關閉噴煙/",
+      "/關閉婚宴/",
+      "/關閉噴霧/",
+      "/Turn off automation/",
+      "/turn off automation/",
+      "/turn off the Miser/",
+      "/turn off the organizer/",
+      "/Turn off the go to my son/",
+      "/turn off.+automation/",
+      "/Turn off.+automation/",
+      "/turn off after my son/",
+      "/turn off atomizer/",
+      "/Turn off atomizer/",
+      "/Turn off the app to Master/",
+      "/Turn off.+atomizer/",
+      "/Turn off .+my son/",
+      "/turn off .+my son/",
+      "/turn off .+measure/"
+    ]
+  },
+  {
+    "command": "console.log((matchResult.input.substring(matchResult.index + 2)), 'result')",
+    "conditions": [
+      "/我想/"
+    ]
+  }
+]

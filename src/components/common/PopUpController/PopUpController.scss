@@ -1,0 +1,32 @@
+.pop-up {
+  width: 180px !important;
+  position: fixed;
+  z-index: 1030;
+  top: 80%;
+  right: 0;
+  background: "white";
+  transform: translate(180px, -50%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .theme-button {
+    position: absolute;
+    left: -32px;
+    padding: 13px 7px 13px 7px;
+    border-radius: 0.2rem;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.04);
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.shown {
+    transform: translate(0, calc(-50% + 0.5px));
+    transition: transform 0.4s ease-out;
+  }
+
+  &.hidden {
+    transform: translate(180px, -50%);
+    transition: transform 0.4s ease-out;
+  }
+}

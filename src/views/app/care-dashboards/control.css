@@ -1,0 +1,97 @@
+body {
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.switch-group {
+  text-align: center;
+  width: 100px;
+  color: white;
+}
+
+.botton-box {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid white;
+  padding: 0px 10px 10px;
+  height: 50%;
+}
+
+button {
+  margin-bottom: 5px;
+  text-align: center;
+  width: 90px;
+}
+
+legend {
+  padding: 0 10px;
+  width: min-content;
+  color: white;
+}
+
+#frame {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#screen {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slide-0 {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.slide-1 {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.slide-0 img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: scale(2) translate(-25%, -25%);
+}
+
+.slide-1 img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: scale(2) translate(-25%, -25%);
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+.focusRing___1airF.carousel__slide-focus-ring {
+  outline: none !important;
+}
+
+Input {
+    margin-bottom: 30px;
+}

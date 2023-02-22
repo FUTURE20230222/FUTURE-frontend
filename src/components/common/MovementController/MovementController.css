@@ -1,0 +1,38 @@
+.joystick.up {
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.joystick.down {
+  margin: 0px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.joystick.left {
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+
+.joystick.right {
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+
+.joystick-group-btn {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  left: 20px;
+}

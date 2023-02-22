@@ -1,0 +1,173 @@
+@media only screen and (min-width: 1025px) and (min-height: 785px) {
+  .rotate {
+    width: 150px;
+  }
+
+  .duration {
+    width: 150px;
+    margin-right: 35px;
+  }
+
+  #map-card {
+    max-height: 100%;
+  }
+
+  #mission-card {
+    max-height: 20rem;
+    overflow-y: auto;
+  }
+}
+
+@media only screen and (max-width: 1024px),
+  only screen and (max-height: 784px) {
+  .rotate {
+    width: 110px;
+  }
+
+  #map-card {
+    max-height: 500px;
+  }
+
+  #mission-card {
+    max-height: 13.5rem;
+    overflow-y: auto;
+  }
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.submit-btns {
+  display: flex;
+}
+
+.headder-btns {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  align-items: center;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.duration {
+  width: 110px;
+}
+
+.dropdownList {
+  display: flex;
+}
+
+button.dropdown-item {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.list-btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-btn {
+  width: min-content;
+  margin: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn_map {
+  max-width: min-content;
+}
+
+#map-btn-group {
+  padding: 0px;
+  overflow-y: auto;
+  overflow-x: auto;
+  height: 450px;
+  width: fit-content;
+}
+
+.card-title {
+  margin-top: 0px;
+  margin-left: 2px;
+  margin-bottom: 0px !important;
+}
+
+#map-btn-group div button.btn {
+  font-size: small;
+  padding: 5px;
+  max-width: 60px;
+  height: min-content;
+  margin-bottom: 5px;
+}
+
+div.card-body div.row {
+  margin: 0px;
+}
+
+.card-body {
+  padding: 5px !important;
+}
+
+.submit-btn {
+  margin-right: 5px;
+}
+
+.load-btn {
+  margin-right: 5px;
+}
+
+.split {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.glyph-icon {
+  height: min-content;
+  width: min-content;
+}
+
+.hours {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.minutes {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.hour-input {
+  width: 80px;
+}
+
+.minute-input {
+  width: 80px;
+}
+
+.display-point {
+  margin-bottom: 5px;
+}
+
+.display-point Label {
+  margin-bottom: 0px;
+}
+
+.collapse-div {
+  display: flex;
+}
+
+.left-container {
+  height: 100px;
+}

@@ -1,0 +1,137 @@
+{
+  "name": "gogo-react",
+  "version": "5.2.0",
+  "description": "RPASS",
+  "private": true,
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "@material-ui/core": "^4.11.3",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "availity-reactstrap-validation": "^2.6.1",
+    "axios": "^0.27.2",
+    "chart.js": "2.9.3",
+    "classnames": "2.2.6",
+    "firebase": "^7.15.5",
+    "formik": "^2.1.4",
+    "konva": "^7.2.2",
+    "moment": "^2.29.4",
+    "mousetrap": "^1.6.5",
+    "prop-types": "^15.7.2",
+    "pure-react-carousel": "^1.27.6",
+    "rc-slider": "^9.3.1",
+    "rc-switch": "^3.2.0",
+    "react": "^17.0.0",
+    "react-albus": "^2.0.0",
+    "react-autosuggest": "^10.0.2",
+    "react-axios": "^2.0.4",
+    "react-big-calendar": "^0.26.0",
+    "react-circular-progressbar": "^2.0.3",
+    "react-colorful": "^5.2.0",
+    "react-contextmenu": "^2.14.0",
+    "react-datepicker": "^3.0.0",
+    "react-dom": "^17.0.0",
+    "react-dropzone-component": "^3.2.0",
+    "react-google-maps": "^9.4.5",
+    "react-headroom": "^3.0.0",
+    "react-icons": "^4.2.0",
+    "react-image-lightbox": "^5.1.1",
+    "react-intl": "5.0.2",
+    "react-jitsi": "^1.0.4",
+    "react-joystick-component": "^1.4.0",
+    "react-konva": "^17.0.0-0",
+    "react-lines-ellipsis": "^0.14.1",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-quill": "^1.3.5",
+    "react-rater": "^5.1.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.1",
+    "react-scroll": "^1.7.16",
+    "react-select": "^3.1.0",
+    "react-sortablejs": "^2.0.11",
+    "react-speech-recognition": "^3.8.0",
+    "react-table": "7.2.2",
+    "react-tagsinput": "^3.19.0",
+    "react-transition-group": "^4.4.1",
+    "react-webcam": "^7.0.1",
+    "react-yandex-maps": "^4.4.0",
+    "reactstrap": "^8.5.1",
+    "read-excel-file": "^5.4.2",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "socket.io": "^3.1.1",
+    "socket.io-client": "^3.1.1",
+    "sortablejs": "^1.10.2",
+    "styled-components": "^5.2.1",
+    "use-image": "^1.0.7",
+    "uuid": "^8.3.2",
+    "video.js": "^7.8.3",
+    "web-vitals": "^0.2.4",
+    "workbox-background-sync": "^5.1.4",
+    "workbox-broadcast-update": "^5.1.4",
+    "workbox-cacheable-response": "^5.1.4",
+    "workbox-core": "^5.1.4",
+    "workbox-expiration": "^5.1.4",
+    "workbox-google-analytics": "^5.1.4",
+    "workbox-navigation-preload": "^5.1.4",
+    "workbox-precaching": "^5.1.4",
+    "workbox-range-requests": "^5.1.4",
+    "workbox-routing": "^5.1.4",
+    "workbox-strategies": "^5.1.4",
+    "workbox-streams": "^5.1.4",
+    "yup": "^0.29.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "precommit": "lint-staged"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5"
+  },
+  "type": "module"
+}

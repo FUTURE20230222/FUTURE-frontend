@@ -1,0 +1,10 @@
+[
+  {
+    "command": "fetch('http://192.168.199.105:8080/running')",
+    "conditions": ["/跑/"]
+  },
+  {
+    "command": "fetch('http://api.roborn.com:28082/call?request=call')",
+    "conditions": ["/打電話/", "/你好/"]
+  }
+]

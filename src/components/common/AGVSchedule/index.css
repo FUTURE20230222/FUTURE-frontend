@@ -1,0 +1,36 @@
+.row-1 {
+    border-top: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    text-align: center;
+    position: relative;
+    line-height: 50px;
+}
+.row-2 {
+    /* border-left: solid 1px black; */
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.schedule-container{
+    width: min-content;
+    overflow-x: auto;
+}
+
+.schedule-category{
+    border-left: solid 1px black;
+}
+
+.time{
+    height: 50px;
+}
+
+.simple-icon-plus{
+    font-size: 20px;
+}
