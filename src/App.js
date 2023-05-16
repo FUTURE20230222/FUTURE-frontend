@@ -17,6 +17,7 @@ import FutureAppUI from './views/app/pages/default'
 import { useRobornSpeechRecognition } from './helpers/RobornSpeechRecognition'
 import ReactHub from './views/app/pages/reactHub/reactHub'
 import ProjectionApp from './views/app/pages/reactHub/projectionApp.js'
+import { Call_page_and_audio } from './components/common/socketio-client'
 import zIndex from '@material-ui/core/styles/zIndex';
 import { lang } from 'moment';
 
@@ -114,6 +115,7 @@ class App extends React.Component {
             <div style={{ position: "absolute", left: "calc(100vw - 150px)", top: "200px", width: "150px", height: "100px", background: "#eee", cursor: 'pointer', fontSize: "32px", textAlign: 'center', display: 'none', zIndex: 999 }} id="hrjlhy3" onClick={this.hrjlhy3}><span style={{ lineHeight: '100px' }}>普通话</span></div>
             <div style={{ position: "absolute", left: "calc(100vw - 150px)", top: "300px", width: "150px", height: "100px", background: "#eee", cursor: 'pointer', fontSize: "32px", textAlign: 'center', display: 'none', zIndex: 999 }} id="hrjlhy4" onClick={this.hrjlhy4}><span style={{ lineHeight: '100px' }}>粤语</span></div>
             <SpeechRecognition myCarouselRef={this.myCarouselRef} language={this.state.language}></SpeechRecognition>
+            <SocketControl myCarouselRef={this.myCarouselRef}></SocketControl>
             <Switch>
               <MyProtectedRoute
                 path={adminRoot}
@@ -156,6 +158,10 @@ class App extends React.Component {
 
 const SpeechRecognition = ({ myCarouselRef, language }) => {
   useRobornSpeechRecognition({ myCarouselRef, language })
+  return <></>
+}
+const SocketControl = ({ myCarouselRef }) => {
+  Call_page_and_audio({ myCarouselRef })
   return <></>
 }
 
