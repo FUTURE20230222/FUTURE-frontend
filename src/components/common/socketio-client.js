@@ -56,7 +56,7 @@ const Call_page_and_audio = ({ myCarouselRef }) => {
     // console.log(elements)
 
     // history.push(`/app/emptyPage/${elem.imageName}/${elem.voiceName}/${elem.videoName}`)
-    history.push(`/app/emptyPage/Future 6.jpg/Section6 Have.mp3/undefined`)
+    history.push(`/app/emptyPage/Future 6.gif/Section6 Have .mp3/undefined`)
     // const sound = new Audio(bigWasterAudio.bigwasterQ1)
     // sound.play()
     // playWithCallback(sound)
