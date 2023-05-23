@@ -61,6 +61,7 @@ class App extends React.Component {
     this.hrjlhy2 = this.hrjlhy2.bind(this);
     this.hrjlhy3 = this.hrjlhy3.bind(this);
     this.hrjlhy4 = this.hrjlhy4.bind(this);
+    this.hrjlhy5 = this.hrjlhy5.bind(this);
   }
 
   setCarousel(carousel) {
@@ -75,6 +76,7 @@ class App extends React.Component {
     document.querySelector('#hrjlhy2').style.display = document.querySelector('#hrjlhy2').style.display == 'none' ? 'initial' : 'none'
     document.querySelector('#hrjlhy3').style.display = document.querySelector('#hrjlhy3').style.display == 'none' ? 'initial' : 'none'
     document.querySelector('#hrjlhy4').style.display = document.querySelector('#hrjlhy4').style.display == 'none' ? 'initial' : 'none'
+    document.querySelector('#hrjlhy5').style.display = document.querySelector('#hrjlhy5').style.display == 'none' ? 'initial' : 'none'
   }
   hrjlhy2(e) {
     e.stopPropagation();
@@ -97,6 +99,13 @@ class App extends React.Component {
     document.querySelector('#hrjlhy1').click()
     console.log('Change language:', "zh-HK")
   }
+  hrjlhy5(e) {
+    e.stopPropagation();
+    this.setState({ language: "ja" });
+    sessionStorage.setItem('lang', 'ja');
+    document.querySelector('#hrjlhy1').click()
+    console.log('Change language:', "ja")
+  }
 
   render() {
     const { locale } = this.props;
@@ -114,6 +123,7 @@ class App extends React.Component {
             <div style={{ position: "absolute", left: "calc(100vw - 150px)", top: "100px", width: "150px", height: "100px", background: "#eee", cursor: 'pointer', fontSize: "32px", textAlign: 'center', display: 'none', zIndex: 999 }} id="hrjlhy2" onClick={this.hrjlhy2}><span style={{ lineHeight: '100px' }}>English</span></div>
             <div style={{ position: "absolute", left: "calc(100vw - 150px)", top: "200px", width: "150px", height: "100px", background: "#eee", cursor: 'pointer', fontSize: "32px", textAlign: 'center', display: 'none', zIndex: 999 }} id="hrjlhy3" onClick={this.hrjlhy3}><span style={{ lineHeight: '100px' }}>普通话</span></div>
             <div style={{ position: "absolute", left: "calc(100vw - 150px)", top: "300px", width: "150px", height: "100px", background: "#eee", cursor: 'pointer', fontSize: "32px", textAlign: 'center', display: 'none', zIndex: 999 }} id="hrjlhy4" onClick={this.hrjlhy4}><span style={{ lineHeight: '100px' }}>粤语</span></div>
+            <div style={{ position: "absolute", left: "calc(100vw - 150px)", top: "400px", width: "150px", height: "100px", background: "#eee", cursor: 'pointer', fontSize: "32px", textAlign: 'center', display: 'none', zIndex: 999 }} id="hrjlhy5" onClick={this.hrjlhy5}><span style={{ lineHeight: '100px' }}>日语</span></div>
             <SpeechRecognition myCarouselRef={this.myCarouselRef} language={this.state.language}></SpeechRecognition>
             <SocketControl myCarouselRef={this.myCarouselRef}></SocketControl>
             <Switch>
